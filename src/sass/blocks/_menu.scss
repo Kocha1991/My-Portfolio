@@ -9,7 +9,7 @@
   align-items: flex-end;
   cursor: pointer;
   &:hover {
-     span {
+    span {
       transition: 0.4s all;
       width: 65px;
     }
@@ -19,14 +19,11 @@
     width: 50px;
     height: 5px;
     background: #151812;
-    
   }
   span.long {
     width: 60px;
   }
-  
 }
-
 
 .menu {
   position: fixed;
@@ -61,7 +58,7 @@
     &:hover {
       svg path {
         transition: 0.6s all;
-        fill:#ffffff;
+        fill: #ffffff;
       }
     }
   }
@@ -88,7 +85,6 @@
       transition: 0.6s all;
     }
     &:hover {
-      font-size: 26px;
       &::before {
         background-color: rgba($color: #fff, $alpha: 0.6);
       }
@@ -117,7 +113,7 @@
           transition: 0.6s all;
           fill: #ffffff;
         }
-      } 
+      }
     }
   }
   &__overlay {
