@@ -17,7 +17,14 @@
   }
   &__link {
     margin-right: 25px;
-   
+    &:hover{
+      text-decoration: none;
+      svg path {
+        transition: 0.6s all;
+
+        fill: $on-color;
+      }
+    }
     svg {
       max-width: 25px;
       min-height: 25px;
