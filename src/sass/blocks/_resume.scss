@@ -1,0 +1,88 @@
+.resume {
+  background: $bg-color;
+  &__wrapper {
+    padding: 60px 65px 0 65px;
+    display: grid;
+    grid-template-columns: repeat(2, 425px);
+    column-gap: 135px;
+  }
+  &__colum {
+    &-title {
+      position: relative;
+      padding-left: 35px;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        background: $main-color;
+        left: -6px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    ul {
+      list-style-type: none;
+      li {
+        position: relative;
+        &::after {
+          content: "";
+          width: 3px;
+          height: 100%;
+          position: absolute;
+          top: -14px;
+          left: 0;
+          background-color: $main-color;
+        }
+      }
+    }
+  }
+  &__item {
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 45px;
+        height: 2px;
+        background-color: $on-color;
+        top:38px;
+        
+    }
+    &-head {
+      position: relative;
+      padding: 25px 0 0 100px;
+    
+      h4 {
+        margin-bottom: 0;
+      }
+    }
+    &-body {
+      padding-left: 43px;
+      margin-top: 12px;
+    }
+    &-icon {
+      position: absolute;
+      top: 36px;
+      left: 60px;
+      z-index: 2;
+      @include befor_circle;
+      &:before {
+        width: 36px;
+        height: 36px;
+        top: -15px;
+        left: -15px;
+      }
+    }
+    &-location {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+    }
+    &-body {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+}
