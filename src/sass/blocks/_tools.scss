@@ -1,15 +1,14 @@
-.grid-tools {
-  margin-top: 60px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-auto-rows: 1fr;
-  gap: 13px;
-}
-
 .tools {
   padding: 120px 11px 11px 11px;
   background: $bg-color;
+  &__grid {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 13px;
+  }
   &__items {
     position: relative;
     width: 270px;

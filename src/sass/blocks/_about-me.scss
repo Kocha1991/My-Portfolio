@@ -1,26 +1,27 @@
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(200px, auto));
-  grid-template-rows: repeat(2, minmax(200px, auto));
-  gap: 50px;
-  grid-template-areas:
-    "foto text"
-    "foto skills";
-}
-#foto {
-  grid-area: foto;
-}
-#text {
-  grid-area: text;
-}
-#skills {
-  grid-area: skills;
-}
+
 
 .about-me {
-  min-height: 880px;
+  min-height: 100%;
   padding: 120px 100px;
   background: $bg-color;
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, auto));
+    grid-template-rows: repeat(2, minmax(200px, auto));
+    gap: 50px;
+    grid-template-areas:
+      "foto text"
+      "foto skills";
+  }
+  #foto {
+    grid-area: foto;
+  }
+  #text {
+    grid-area: text;
+  }
+  #skills {
+    grid-area: skills;
+  }
   &__foto {
     max-width: 400px;
     max-height: 600px;
@@ -75,9 +76,9 @@
   }
   &__item {
     position: relative;
-    width: 260px;
+    width: 300px;
     margin-left: 55px;
-    margin-bottom: 50px;
+    column-gap: 50px;
     &__header {
       font-weight: 700;
       font-size: 14px;
