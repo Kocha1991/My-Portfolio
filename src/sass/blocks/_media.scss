@@ -15,7 +15,8 @@
   .about-me {
     padding: 0;
     img {
-      width: 300px;
+      width: 100%;
+      object-fit: cover;
     }
     &__text {
       width: 100%;
@@ -50,6 +51,28 @@
     &__wrapper {
       grid-template: repeat(2, 230px) / repeat(4, 235px);
       grid-auto-rows: auto;
+    }
+  }
+  .contacts {
+    padding: 50px;
+    &__wrapper {
+      width: 100%;
+      grid-template-columns: 300px 100%;
+      justify-content: space-between;
+      gap: 30px;
+    }
+    &__descr {
+      width: 500px;
+    }
+    &__input {
+      width: 90%;
+    }
+    &__photo {
+      width: 300px;
+      object-fit: cover;
+    }
+    &__form {
+      width: 100%;
     }
   }
 }
@@ -94,6 +117,54 @@
     &__ratings {
       margin-top: 60px;
       grid-template: repeat(6, minmax(70px, auto)) / repeat(1, 350px);
+    }
+  }
+  .portfolio {
+    &__wrapper {
+      justify-content: center;
+      grid-template: repeat(2, 230px) / repeat(3, 235px);
+      grid-auto-rows: auto;
+      grid-template-areas:
+        "uber work roulet"
+        "coffe puls puls";
+    }
+  }
+  #uber {
+    grid-area: uber;
+  }
+  #work {
+    grid-area: work;
+  }
+  #roulet {
+    grid-area: roulet;
+  }
+  #coffe {
+    grid-area: coffe;
+  }
+  #puls {
+    grid-area: puls;
+  }
+  
+  .contacts {
+    &__wrapper {
+      position: relative;;
+    }
+    &__photo {
+      position: absolute;
+      width: 200px;
+      left: 350px;
+    }
+    &__descr {
+      width: 100%;
+    }
+    &__form {
+      grid-template: 45px 200px 45px / repeat(2, 100%);
+    }
+    &__input {
+      width: 90%;
+    }
+    &__textarea {
+      width: 100%;
     }
   }
 }
@@ -143,6 +214,39 @@
       line-height: 16px;
     }
   }
+  .portfolio {
+    &__wrapper {
+      justify-content: center;
+      grid-template: repeat(3, 230px) / repeat(2, 250px);
+      grid-auto-rows: auto;
+      grid-template-areas:
+        "uber work"
+        "coffe roulet"
+        "puls puls";
+    }
+  }
+  .contacts {
+    
+    &__wrapper {
+      display: block;
+      width: 90%;
+    }
+    &__form {
+      display: block;
+    }
+    &__photo {
+      display: none;
+    }
+    &__descr {
+      width: 100%;
+    }
+  
+    &__input {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+  
 }
 
 @media (max-width: 576px) {
@@ -233,6 +337,33 @@
       &-line {
         width: 250px;
       }
+    }
+  }
+  .portfolio {
+    &__wrapper {
+      justify-content: center;
+      grid-template: repeat(5, 230px) / repeat(1, 100%);
+      grid-auto-rows: auto;
+      grid-template-areas:
+        "uber"
+        'work'
+        "roulet"
+        'coffe'
+        "puls";
+    }
+  }
+  .contacts {
+    &__form {
+      display: block;
+    }
+    &__triggers {
+      display: block;
+    }
+    &__btn {
+      margin-top: 20px;
+    }
+    &__policy {
+      margin-top: 10px;
     }
   }
 }
