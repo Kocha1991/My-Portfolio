@@ -361,12 +361,19 @@
     &__triggers {
       display: block;
     }
+    &__social{
+      width: 300px;
+      svg {
+        width: 20px;
+        height: 20px;
+      } 
+    }
     &__btn {
       margin-top: 20px;
     }
     &__policy {
       margin-top: 10px;
-    }
+    } 
   }
 }
 
