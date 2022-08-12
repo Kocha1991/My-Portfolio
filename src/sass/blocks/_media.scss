@@ -290,7 +290,7 @@
     }
   }
   .about-me {
-    padding: 40px;
+    padding: 40px 15px;
     &__grid {
       grid-template-columns: repeat(1, minmax(auto));
       grid-template-rows: repeat(3, minmax(auto));
